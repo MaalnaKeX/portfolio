@@ -2,6 +2,7 @@ import { about } from "./about.js"
 
 const routes = {
     "": "home.html",
+    "1": "home1.html",
     "about" : "about.html",
     "projects" : "projects.html",
     "404" : "404.html"
