@@ -4,9 +4,8 @@
 
 export const about = () => {
     // document.getElementById("rand").innerHTML = randint(500, 510)
-    document.querySelectorAll(".clickable").forEach((e) => {e.addEventListener("click", scrollInto)})
-    function scrollInto(id) {
-      console.log(id);
-      document.getElementById("languages").scrollIntoView()
-    }
+    document.querySelector(".clickable").addEventListener("click", (e) => {
+      document.getElementById("languages").scrollIntoView({ behavior: 'smooth' })
+    })
+    
 }
