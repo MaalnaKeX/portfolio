@@ -1,6 +1,6 @@
 <div class="bg-[##1b1b1f] flex flex-col items-center gap-4">
     <h1 class="text-2xl font-bold">Home</h1>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <div class="flex flex-col-reverse sm:flex-row gap-4">
         <div class="flex flex-col gap-4 justify-center">
             <p class="text-4xl font-bold text-[#646cff]">Kovács Tamás</p>
             <div class="text-3xl font-bold">
@@ -8,23 +8,22 @@
                 <p>Game Developer, 3D Artist</p>
             </div>
         </div>
-        <div class="border-2 border-[#646cff] bg-[url('./assets/images/portrait.jpg')] bg-cover bg-center rounded-2xl h-96 flex justify-center items-center"></div>
-        <!-- <img src="./assets/images/portrait.jpg" class="rounded-full h-96 w-96"> -->
-        <div class="flex gap-4">
-            <a href="#/projects" class="font-bold bg-[#646cff] rounded-full p-2 px-4 w-min shadow-xl select-none cursor-pointer hover:scale-105 transition-all">Projects</a>
-            <a href="https://maalnakex.itch.io/" target="_blank" class="font-bold bg-[#32363f] rounded-full p-2 px-4 w-min shadow-xl select-none cursor-pointer hover:scale-105 transition-all">Games</a>
-            <p class="font-bold bg-[#32363f] rounded-full p-2 px-4 w-min shadow-xl select-none cursor-pointer hover:scale-105 transition-all" id="3d">3D</p>
-        </div>
+        <!-- <div class="border-2 border-[#646cff] bg-[url('./assets/images/mog384x384.jpg')] rounded-full bg-cover bg-center h-96 flex justify-center items-center"></div> -->
+        <img src="./assets/images/mog384x384.jpg" class="rounded-full">
     </div>
+	<div class="flex gap-4 w-full">
+		<a href="#/projects" class="font-bold bg-[#646cff] rounded-full p-2 px-4 w-min shadow-xl select-none cursor-pointer hover:scale-105 hover:drop-shadow-[0.2rem_0.2rem_#646cff] transition-all">Projects</a>
+		<a href="https://maalnakex.itch.io/" target="_blank" class="font-bold bg-[#32363f] rounded-full p-2 px-4 w-min shadow-xl select-none cursor-pointer hover:scale-105 hover:drop-shadow-[0.2rem_0.2rem_#646cff] transition-all">Games</a>
+		<p class="font-bold bg-[#32363f] rounded-full p-2 px-4 w-min shadow-xl select-none cursor-pointer hover:scale-105 hover:drop-shadow-[0.2rem_0.2rem_#646cff] transition-all" id="3d">3D</p>
+	</div>
 
     <div>
         <h2 class="text-2xl font-bold text-center" id="3d-start">Materials</h2>
         <div class="flex flex-wrap justify-center">
-            <img src="./assets/images/steel_material.png" class="h-72 hover:scale-105 transition-all">
-            <img src="./assets/images/marble_material.png" class="h-72 hover:scale-105 transition-all">
-            <img src="./assets/images/wood2_material.png" class="h-72 hover:scale-105 transition-all">
-            <img src="./assets/images/metal_material.png" class="h-72 hover:scale-105 transition-all">
-            <!-- <img src="./assets/images/wood_material.png" class="h-72"> -->
+            <img src="./assets/images/plastic_material_300x300.png" class="h-72 hover:scale-105 hover:drop-shadow-[1rem_1rem_#646cff] transition-all">
+            <img src="./assets/images/marble_material_300x300.png" class="h-72 hover:scale-105 hover:drop-shadow-[1rem_1rem_#646cff] transition-all">
+            <img src="./assets/images/wood2_material_300x300.png" class="h-72 hover:scale-105 hover:drop-shadow-[1rem_1rem_#646cff] transition-all">
+            <img src="./assets/images/metal_material_300x300.png" class="h-72 hover:scale-105 hover:drop-shadow-[1rem_1rem_#646cff] transition-all">
         </div>
     </div>
 
@@ -32,4 +31,7 @@
         <h2 class="text-2xl font-bold text-center">Renders</h2>
         <img src="./assets/wallpaper4.png" class="rounded-md w-[40rem] hover:scale-105 transition-all">
     </div>
+    <!-- <div class="fixed border-4 border-[#646cff] rounded-md h-96 w-96">
+
+    </div> -->
 </div>
