@@ -13,10 +13,29 @@
         <a href="#/projects">Projects</a>
     </nav>
 
+    
     <main class="flex justify-center max-w-[80rem] w-full bg-[#1b1b1f] rounded-md p-4">
-        
+      
     </main>
+
+    <div class="fixed bg-black/50 w-full h-screen flex justify-center items-center opacity-0 transition-all pointer-events-none" id="overlay" onclick="hide()">
+      <input type="button" value="X" class="text-2xl absolute top-10 right-10 pointer-events-auto" onclick="hide()">
+      <!-- <div class="bg-[#646cff] h-96 w-96"></div> -->
+      <img src="assets/images/metal_material.png" id="selected-image" class="max-h-screen">
+    </div>
     
     <script type="module" src="router.js"></script>
+    <script>
+      window.addEventListener("keyup", (e) => {
+        if (e.key == "Escape") hide()
+      })
+
+      function hide() {
+        document.getElementById("overlay").classList.remove("opacity-100")
+        document.getElementById("overlay").classList.add("pointer-events-none")
+        document.getElementById("overlay").classList.add("opacity-0")
+        document.querySelector(".pointer-events-auto").classList.remove("cursor-pointer")
+      }
+    </script>
 </body>
 </html>
